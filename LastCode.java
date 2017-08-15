@@ -1,4 +1,4 @@
-package sample;
+
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -59,7 +59,13 @@ public class LastCode extends Application {
         comboBox.setPromptText("Chose "+data);
         hb.setSpacing(10);
         hb.setPadding(new Insets(20));
+        
+        if (root.getChildren().size() == 2){
+            root.getChildren().remove(1);
+        } 
+
         root.getChildren().add(hb);
+
         ///lbl.setText("You Clicked on " + b.getText());
 
     }
